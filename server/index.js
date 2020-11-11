@@ -31,5 +31,6 @@ app.use(session({
 //ENDPOINTS
 app.post('/auth/register', authControl.register);
 app.post('/auth/login', authControl.login);
+app.get('/auth/logout', authControl.logout);
 
 app.listen(PORT, ()=>console.log(`Listening on port: ${PORT}`));
